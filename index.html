@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Order Detail</title>
+    <style>
+        .row {
+            display: flex;
+            flex-flow: column;
+            align-content: space-evenly;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .prices-option{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="row">
+        <input type="text" placeholder="Full Name">
+        <input type="tel" placeholder="Phone">
+    </div>
+    <div class="prices-option">
+        <label for="option-1"><input type="checkbox" id="option-1"> Option-1 $50</label>
+        <label for="option-2"><input type="checkbox" id="option-2"> Option-2 $100</label>
+        <label for="option-3"><input type="checkbox" id="option-3"> Option-3 $150</label>
+        <label for="option-4"><input type="checkbox" id="option-4"> Option-4 $200</label>
+    </div>
+    <div class="row">
+        <input type="email" placeholder="Email">
+    </div>
+    <div class="row">
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Leave Your message"></textarea>
+    </div>
+    <span>Toal Price: $200</span>
+    <div class="button-container">
+        <button>Submit</button>
+    </div>
+
+</div>
+</body>
+</html>
